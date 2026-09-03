@@ -1,38 +1,34 @@
 # Excel Automation Toolkit
 
-Automatically clean messy Excel files in seconds.
-
-## Problem
-
-Businesses often receive Excel files with duplicate rows, missing values, and inconsistent formatting.
-
-This tool cleans those files automatically.
+A Python tool that automatically cleans messy Excel files.
 
 ## Features
 
 - Remove duplicate rows
 - Remove empty rows
-- Remove rows with missing names
 - Auto-adjust column widths
 - Generate a Summary sheet
 - Save a cleaned Excel file automatically
 
-## Example
+## Folder Structure
 
-Input:
-Sales_Messy.xlsx
+excel-automation-toolkit/
+│── main.py
+│── requirements.txt
+│── input/
+│── output/
 
-Output:
-Sales_Messy_cleaned.xlsx
+## How to Run
+
+1. Put any `.xlsx` file inside `input/`
+2. Run:
+
+python main.py
+
+3. Find the cleaned file inside `output/`
 
 ## Tech Stack
 
 - Python
 - Pandas
 - OpenPyXL
-
-## Run
-
-pip install -r requirements.txt
-
-python main.py
